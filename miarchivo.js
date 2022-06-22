@@ -43,7 +43,7 @@ function capturar (){
 };
 
 
-// DOM para Contador
+// DOM para Contador con Evento
 
 const btnAgregar = document.querySelector('.btn-info');
 const btnDisminuir = document.querySelector ('.btn-danger');
@@ -63,4 +63,4 @@ btnDisminuir.addEventListener('click', () => {
 });
 
 
-// Evento 
+// Otro Evento
