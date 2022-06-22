@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./media/fondoviajero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: inline-block;
+    align-items: center;
+    margin: 40px;
+    transition: all 300ms;
+}
+.card:hover{
+    transform: scale(1.25);
+}
+.cartas{
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 380px;
+}
+.card-link{
+    font-size: 15px;
+    text-align: center;
+}
+
+.resultado{
+    background-color: beige;
+    border-style: double;
+    border-color: black;
+    margin-top: 5px;
+    margin-bottom: 250px;
+    margin-left: 850px;
+}
+
+.provincias{
+    text-decoration: none;
+    transition: all 300ms;
+}
+.provincias:hover{
+    color: red;
+    text-decoration: dotted;
+}
+
+.table{
+    margin: 35px;
+    margin-bottom: 150px;
+}

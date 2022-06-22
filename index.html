@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Vuelos Nacionales Disponibles</title>
+</head>
+<body>
+    <header>
+        <h1>Vuelos</h1>
+    </header>
+    <main>
+        <div class="cartas">
+            <div class="card" style="width: 18rem;">
+                <img src="./media/mendoza.jpg" class="card-img-top" alt="mendoza">
+                <div class="card-body">
+                    <a href="" class="provincias" onclick=""><h5 class="card-title"><strong>Mendoza</strong></h5></a>
+                    <p class="card-text">Desde Buenos Aires</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">A partir de $45.000</li>
+                    <li class="list-group-item">COMPRÁ AQUÍ:</li>
+                </ul>
+                <div class="card-body">
+                    <div><a href="#section" class="card-link" onclick="calcule(45000,6,'mendoza');">6 cuotas sin interés</a></div>
+                    <div><a href="#section" class="card-link" onclick="calcule(45000,12,'mendoza');">12 cuotas sin interés</a></div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./media/bariloche.jpg" class="card-img-top" alt="bariloche">
+                <div class="card-body">
+                    <a href="" class="provincias" onclick=""><h5 class="card-title"><strong>Bariloche</strong></h5></a>
+                    <p class="card-text">Desde Buenos Aires</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">A partir de $48.000</li>
+                    <li class="list-group-item">COMPRÁ AQUÍ:</li>
+                </ul>
+                <div class="card-body">
+                    <div><a href="#section" class="card-link" onclick="calcule(48000,6,'bariloche');">6 cuotas sin interés</a></div>
+                    <div><a href="#section" class="card-link" onclick="calcule(48000,12,'bariloche');">12 cuotas sin interés</a></div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./media/ushuaia.jpg" class="card-img-top" alt="ushuaia">
+                <div class="card-body">
+                    <a href="" class="provincias" onclick=""><h5 class="card-title"><strong>Ushuaia</strong></h5></a>
+                    <p class="card-text">Desde Buenos Aires</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">A partir de $50.000</li>
+                    <li class="list-group-item">COMPRÁ AQUÍ:</li>
+                </ul>
+                <div class="card-body">
+                    <div><a href="#section" class="card-link" onclick="calcule(50000,6,'ushuaia');">6 cuotas sin interés</a></div>
+                    <div><a href="#section" class="card-link" onclick="calcule(50000,12,'ushuaia');">12 cuotas sin interés</a></div>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <input id="nombre" type="text" placeholder="Ingresa Ciudad Argentina" class="form-control m-2">
+            <input id="epoca" type="text" placeholder="Ingresa Mejor Época" class="form-control m-2">
+            <input id="gastronomia" type="text" placeholder="Ingresa Gastronomía">
+            <button id="boton" class="btn btn-success" type="reset" onclick="capturar();">Agregar Ciudad</button>
+        </form>
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Ciudad Argentina</th>
+                    <th>Mejor Época</th>
+                    <th>Gastronomía</th>
+                </tr>
+            </thead>   
+        </table>
+
+        <section class="resultado" id="section" style="display: none;">
+            <h2 id="provincia"></h2>
+            <h3 id="cuotas"></h3>
+        </section>
+        <div class="conteiner py-5 bg-warning text-center">
+            <h1>Ejemplo de Contador</h1>
+            <button class="btn btn-info">
+                Aumentar
+            </button>
+            <button class="btn btn-danger">
+                Disminuir
+            </button>
+            <h4 class="my-5">Contador:<span id="span">0</span></h4>
+        </div>
+    </main>
+    <footer>
+        <h3>todos los derechos reservados</h3>
+    </footer>
+    <script src="miarchivo.js"></script>
+</body>
+</html>
