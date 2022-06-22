@@ -17,6 +17,7 @@
         <h1>Vuelos</h1>
     </header>
     <main>
+        <!-- CARDS -->
         <div class="cartas">
             <div class="card" style="width: 18rem;">
                 <img src="./media/mendoza.jpg" class="card-img-top" alt="mendoza">
@@ -64,13 +65,14 @@
                 </div>
             </div>
         </div>
-
+        <!-- Formulario para Add Ciudades -->
         <form>
             <input id="nombre" type="text" placeholder="Ingresa Ciudad Argentina" class="form-control m-2">
             <input id="epoca" type="text" placeholder="Ingresa Mejor Época" class="form-control m-2">
             <input id="gastronomia" type="text" placeholder="Ingresa Gastronomía">
             <button id="boton" class="btn btn-success" type="reset" onclick="capturar();">Agregar Ciudad</button>
         </form>
+        <!-- Tabla de Ciudades Adds-->
         <table class="table" id="tabla">
             <thead class="thead-inverse">
                 <tr>
@@ -80,11 +82,12 @@
                 </tr>
             </thead>   
         </table>
-
+        <!-- Resultado -->
         <section class="resultado" id="section" style="display: none;">
             <h2 id="provincia"></h2>
             <h3 id="cuotas"></h3>
         </section>
+        <!-- Botonera -->
         <div class="conteiner py-5 bg-warning text-center">
             <h1>Ejemplo de Contador</h1>
             <button class="btn btn-info">
