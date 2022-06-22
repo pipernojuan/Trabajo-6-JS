@@ -64,3 +64,11 @@ btnDisminuir.addEventListener('click', () => {
 
 
 // Otro Evento
+
+const btn = document.querySelector ('.btn-dark');
+const bhSuccess = document.querySelector ('.bg-success');
+
+btn.addEventListener('click', () => {
+    console.log('Diste click efectivamente');
+    prompt ("Hola Mundo");
+});
