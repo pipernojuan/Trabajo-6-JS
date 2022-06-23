@@ -70,5 +70,5 @@ const bhSuccess = document.querySelector ('.bg-success');
 
 btn.addEventListener('click', () => {
     console.log('Diste click efectivamente');
-    prompt ("Hola Mundo");
+    alert ("Hola Mundo");
 });
